@@ -1,0 +1,77 @@
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 1.9em;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.7em;
+}
+
+p {
+    font-weight: 100;
+    font-size: 1.1em;
+}
+
+main {
+    width: 100%;
+}
+
+header {
+    background-color: black;
+    padding: 1em;
+    color: whitesmoke;
+}
+
+section {
+    padding: 1em;
+    color: coral;
+}
+
+footer {
+    padding: 1em;
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.bg_video {
+    background: center;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+}
+
+.main { display: flex; align-items: center; justify-content: center; }
+
+.kono {
+    background: rgba(0, 0, 0, 0.75);
+    font-size: 1.3em;
+    color: whitesmoke;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+.kono a {
+    color: turquoise;
+    transition: 1s;
+}
+
+.kono a:hover {
+    color: white;
+    text-shadow: 0 0 8px white;
+}
+

@@ -1,0 +1,249 @@
+.hisFixed {
+    width: 70%;
+    height: 500px;
+    position: absolute;
+    top: 70px;
+    right: 20%;
+    background: #0f0f0f;
+    z-index: 1000;
+    overflow-y: auto;
+    display: none;
+    line-height: 1.3;
+}
+
+.containerHistory {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.containerHistory .hisPosts {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.containerHistory .hisEmpty {
+    text-align: center;
+    color: #ccc;
+}
+
+.containerHistory .hisEmpty h3 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.containerHistory .hisEmpty span {
+    display: block;
+}
+
+.containerHistory .hisApp {
+    display: flex;
+    flex-direction: column;
+    clear: both;
+    max-width: 1280px;
+    margin: auto .8rem;
+    margin-top: 2em;
+}
+
+.containerHistory .hisApp .hisQuantidade {
+    padding: 10px;
+    color: #fff;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #333;
+    font-size: 14px;    padding: 10px;
+    color: #fff;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #333;
+    font-size: 14px;
+}
+
+.containerHistory .hisApp .hisQuantidade span {
+    display: block;
+}
+
+.containerHistory .hisC {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    transition: all .5s ease;
+}
+
+.containerHistory .hisC .left {
+    width: 150px;
+    height: 95px;
+    margin-right: 10px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.containerHistory .hisC .left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.containerHistory .hisC .right {
+    width: calc(100% - 180px);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+}
+
+.containerHistory .hisC .right .hisNome {
+    width: calc(100% - 50px);
+    height: 100%;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 0 10px;
+    border-right: 1px dashed rgba(255, 255, 255, .1);
+    color: #fff;
+}
+
+.containerHistory .hisC .right .removeHis {
+    width: 50px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 50px;
+    border: 0;
+    background: transparent;
+}
+
+.containerHistory .hisC .right .removeHis svg {
+    fill: #fff;
+    transition: all .3s ease;
+}
+
+.containerHistory .hisC .right .removeHis:hover svg {
+    fill: #da062e;
+}
+
+.containerHistory .cleanHis {
+    padding: 15px 0;
+    background: #333;
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .5s ease;
+    color: #fff;
+}
+
+.containerHistory .cleanHis:hover {
+    background: #bb1313!important;
+}
+
+.containerHistory .closeHis {
+    background: #00000024;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    position: absolute;
+    cursor: pointer;
+    float: right;
+    margin: 10px 10px 10px 0;
+    margin-top: -43px;
+    right: 23px;
+    color: #fff;
+}
+
+.containerHistory .closeHis span {
+    font-size: 30px;
+    position: absolute;
+    top: 48%;
+    left: 53%;
+    transform: translate(calc(-50% + 0.1px), calc(-50% + 0.1px));
+    margin-top: -2px;
+    margin-left: -1px;
+    transition: all .1s ease;
+}
+
+.openHis {
+    cursor: pointer;
+}
+
+.login_his {
+    padding: 15px 25px;
+    background: #f78816;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn.prevHis,.btn.nextHis {
+    float: left;
+    background: #000000;
+    color: #fff;
+    border: 1px solid #0c0c0c;
+    border-bottom: 2px solid var(--principal);
+    padding: 0.235rem 0.75rem;
+}
+
+.btn.prevHis:hover, .btn.nextHis:hover {
+    background: var(--principal);
+    border-color: #000;
+    color: #fff;
+}
+
+.selectBoxPaginacao.right {
+    float: right;
+    margin: 0 10px;
+}
+
+.hisPag {
+    margin: 1em 0;
+    margin-top: .5em;
+}
+
+.hisPag2 {
+    margin-top: .5em;
+    margin-bottom: 2em;
+}
+
+.containerHistory .hisC:hover {
+    opacity: .5;
+}
+
+@media only screen and (max-width: 870px) {
+    .hisFixed {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+}
+
+.page_user .hisFixed {
+    position: relative;
+    width: 100%;
+    top: unset;
+    right: unset;
+    background: #0000002e;
+}
+
+.page_user .hisFixed .containerHistory .cleanHis {
+    background: #171717;
+}
+
+.page_user .hisFixed .containerHistory .closeHis {
+    display: none;
+}
+
+@media only screen and (max-width: 580px) {
+    .containerHistory .hisC .right {
+        width: 100%;
+    }
+    .containerHistory .hisC .left {
+        display: none;
+    }
+}
